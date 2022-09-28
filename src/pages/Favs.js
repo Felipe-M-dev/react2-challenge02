@@ -20,7 +20,7 @@ function Favs() {
                 display: 'grid',
                 gap: '20px',
                 padding: '30px',
-                gridTemplateColumns: 'repeat(5, 1fr)'
+                gridTemplateColumns: 'repeat(4, 1fr)'
             }}>
                 {
                     images.filter((e) => e.favourite).map((e, i) => (
