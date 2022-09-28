@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Desafío - Natural Pic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+● Para realizar este desafío debes haber estudiado previamente todo el material disponible correspondiente a la unidad.
 
-## Available Scripts
+● Una vez terminado el desafío, comprime la carpeta que contiene el desarrollo de los requerimientos solicitados y sube el .zip en el LMS.
 
-In the project directory, you can run:
+● Este desafío es de carácter sumativo, es decir, lleva una calificación.
 
-### `npm start`
+● Puntaje total: 10 puntos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+● Desarrollo desafío:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ○ El desafío se debe desarrollar de manera Individual/Grupal.
 
-### `npm test`
+  ○ Para la realización del desafío necesitarás apoyarte del archivo ___Apoyo Desafío - Natural Pic.___
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Habilidades a evaluar
 
-### `npm run build`
+● Mostrar y editar el estado global utilizando Context API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contextualización
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Natural Pic es una nueva plataforma dedicada a fotógrafos que promueve el interés por el cuidado ambiental y las fotos de paisajes naturales sin filtros. En este desafío estarás trabajando en el sistema de likes usando Context API para el manejo de estado global y React Router para la creación de las vistas __Home__ y __Favoritos__.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para este desafío descarga el material de apoyo en donde encontrarás una aplicación base con React Router que deberás completar incluyendo lo correspondiente a Context API.
 
-### `npm run eject`
+A continuación, te mostramos imágenes de la aplicación y su funcionamiento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="center">
+  <img src="https://github.com/Felipe-M-dev/react2-challenge02/blob/main/public/01.png?raw=true?raw=true" alt="Imagen 01"><br>
+Imagen 1. Home<br>
+Fuente: Desafío Latam
+</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+  <img src="https://github.com/Felipe-M-dev/react2-challenge02/blob/main/public/02.png?raw=true?raw=true" alt="Imagen 02"><br>
+Imagen 2. Fotos con Likes en Home<br>
+Fuente: Desafío Latam
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="center">
+  <img src="https://github.com/Felipe-M-dev/react2-challenge02/blob/main/public/03.png?raw=true?raw=true" alt="Imagen 03"><br>
+Imagen 3. Vista Favoritos<br>
+Fuente: Desafío Latam
+</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Los datos que deberás utilizar en este desafío los podrás consumir del archivo ___fotos.json___ disponible en la carpeta ___public___ del proyecto, utiliza fetch o axios para esto.
 
-## Learn More
+La información guardada en el JSON proviene de la plataforma Pexels a través de su [API](https://www.pexels.com/es-es/api/). Siéntete libre de cambiar la temática del desafío si lo prefieres obteniendo otras imágenes luego de registrarse en la plataforma y obtener tu API KEY.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center">
+  <img src="https://github.com/Felipe-M-dev/react2-challenge02/blob/main/public/04.png?raw=true?raw=true" alt="Imagen 04"><br>
+Imagen 4. API de Pexels<br>
+Fuente: <a href="https://www.pexels.com/es-es/api/">Pexels</a>
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Requerimientos
 
-### Code Splitting
+1. Crear un contexto con Context API que se pueda importar desde cualquier componente de la aplicación. __(2 Puntos)__
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Usar el contexto creado como un componente para envolver toda la aplicación. __(2 Puntos)__
 
-### Analyzing the Bundle Size
+3. Asignar como valor del Provider un estado creado con el hook useState. __(3 Puntos)__
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Hacer uso del hook useContext para acceder al estado global desde los componentes que lo necesiten. __(3 Puntos)__
 
-### Making a Progressive Web App
+<p align="center">
+  <strong>😊¡Mucho éxito!</strong>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Solución
 
-### Advanced Configuration
+1. Descargar el proyecto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Desde una terminal, posicionarse sobre la carpeta del proyecto y lanzar el siguiente comando:
 
-### Deployment
+```npm install```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Al terminal la instalación de los módulos del proyecto, levantar servidor con el siguiente comando:
 
-### `npm run build` fails to minify
+```npm start```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Cuando el server ya se encuentre arriba, ingresar al navegador y validar sitio en la siguiente URL:
+
+```http://localhost:3000/```
+
+## Sitio desplegado en Netlify
+
+__URL:__
+
+https://natural-pic.netlify.app/
